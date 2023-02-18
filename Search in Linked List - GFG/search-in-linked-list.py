@@ -9,12 +9,11 @@ class Node:
 '''
 class Solution:
     def searchKey(self, n, head, key):
-        current = head
         
-        while current:
-            if current.data == key:
+        while head:
+            if head.data == key:
                 return 1
-            current = current.next
+            head = head.next
         
         return 0
 
